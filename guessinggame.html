@@ -1,0 +1,114 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Color Guess</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.css">
+
+</head>
+
+
+<body>
+
+
+
+<div class="ui grid container">
+<div class="ui sixteen wide left aligned column ">
+<!--icon - check/incorrect-->
+<h1>Guessing Game <br>A word will come up on the screnn you have to select the color </h1>
+
+<i class="check icon" id="checkmark" ></i>
+<i class="close basic icon" id="wrong"></i>
+
+  <div class="start">
+      <button class="newColor" id ="play">New Colour</button>
+      <button class="setA" id ="nextG">Next</button>
+      <button class="resetGame" id ="reset">Reset Game</button>
+      <span class="status">Let's Play!</span>
+  </div>
+
+<form class = "ui form">
+ <label for="colour">Enter A Colour</label>
+  <input type="text" name="colour" id="colour">
+  <button type="submit">Submit</button> 
+  </form> 
+  
+
+  <table class="brd ui raised segment">
+    <thead>
+      <th>Player</th><th>Score</th>
+    </thead>
+   <tr>
+     <td id="player"></td>
+     <td><span id="score">0</span></td>
+   </tr>
+</table>
+
+
+  <div class="first">
+      <div id="color1" class = "colorText color1"></div>
+
+    <div id="color2" class="colorText color2 clear"></div>
+  </div>
+
+  <div class="mainBox">
+    <div class="row">
+     <div id="Blue" class="color blue"></div>
+     <div id="Red" class="color red"></div>
+    </div>
+
+    <div class="row">
+     <div id="Green" class="color green"></div>
+     <div id="Yellow" class="color yellow"></div>
+    </div>
+ </div>
+
+
+
+
+
+ 
+<!--  <div class="column">
+  <div class="ui segment">
+    <p class ="ui message" id = "message"> Scoreboard--></p>
+ <!-- <p class = "player">💭 Name: <span id="player"> </span></p>-->
+ <!--<table>
+    <thead>
+      <th>Player</th><th>Score</th>
+    </thead>
+   <!-- <tbody id="player"></tbody>
+   <tr>
+     <td id="player"></td>
+     <td><span id="score">0</span></td>
+   </tr>
+</table>
+<br><br>
+  
+    <p>
+        🥇 Fastest score: <span id="bestscore">0</span>
+       <!-- <p>💯 Score: <span id="score">0</span></p>
+    </p>
+  </div>
+</div>-->
+   
+ 
+ <span id="correct"></span>
+ <span id="time"></span>
+
+</div>
+</div>
+
+
+<script src="js/main.js"></script>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" 
+integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" 
+crossorigin="anonymous">
+</script>
+<script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.js"></script>
+
+</body>
+
+</html>
